@@ -10,7 +10,7 @@ def display(stack):
             print(i)
 
 while True:
-    print("\n1. Push\n2. Pop\n3. Display\n4. Exit")
+    print("\n1. Push\n2. Pop\n3.Peek\n4. Display\n5. Exit")
     choice = int(input("Enter your choice: "))
     
     if choice == 1:
@@ -26,11 +26,15 @@ while True:
             print("Stack Underflow! The stack is empty.")
         else:
             print("The element popped is:", a.pop())
-    
     elif choice == 3:
+        if len(a) == 0:
+            print("Stack Underflow! The stack is empty.")
+        else:
+            print("The top element is:", a[-1])
+    elif choice == 4:
         display(a)
     
-    elif choice == 4:
+    elif choice == 5:
         print("Exiting program. Goodbye!")
         break
     

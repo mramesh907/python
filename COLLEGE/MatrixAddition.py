@@ -10,7 +10,7 @@ y=[
 ]
 z=[[0,0,0],[0,0,0],[0,0,0]]
 for i in range(len(x)):
-    for j in range(len(x[0])):
+    for j in range(len(y[0])):
         z[i][j]=x[i][j]+y[i][j]
 for i in z:
     print(i)
