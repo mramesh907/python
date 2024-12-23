@@ -54,7 +54,7 @@ def list_to_string():
     for i in list:
         result=result+i+' '
     print(result)
-# list_to_string()
+list_to_string()
 
 def pattern1():
     n=int(input('Enter a number:'))
@@ -284,4 +284,4 @@ def leap_year():
         print(year," is leap year")
     else:
         print(year," is not leap year")
-leap_year()
+# leap_year()
